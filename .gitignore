@@ -7,7 +7,7 @@ __pycache__/
 .env
 secret.key
 
-# Database (if local)
+# Database
 *.db
 
 # OS
