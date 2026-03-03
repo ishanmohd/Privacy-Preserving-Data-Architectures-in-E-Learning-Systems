@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Signup</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="site-header">
+        <h1>Learn Academy</h1>
+    </header>
+
+    <div class="page-content">
+  
+
+
+<div class="container">
+    <select id="role">
+    <option value="student">Student</option>
+    <option value="instructor">Instructor</option>
+    <option value="admin">Admin</option>
+
+</select>
+
+    <h2>Sign Up</h2>
+
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="signup()">Sign Up</button>
+
+    <p id="msg"></p>
+    <pre id="secret"></pre>
+    <p style="font-size:13px;color:#555;text-align:center;">
+    You will need the User ID and OTP to login.
+</p>
+
+
+    <p style="margin-top:15px;text-align:center;">
+        Already registered?
+        <a href="index.html">Login</a>
+    </p>
+</div>
+
+<script src="js/signup.js"></script>
+</body>
+</html>

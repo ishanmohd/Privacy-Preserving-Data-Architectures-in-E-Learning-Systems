@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Study Post</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>Learn Academy</h1>
+</header>
+
+<div class="page-content">
+<div class="container">
+
+    <h2>Add Study Post</h2>
+
+    <input type="text" id="title" placeholder="Title">
+
+    <textarea id="description"
+        placeholder="Short Description"></textarea>
+
+    <textarea id="content"
+        placeholder="Study Notes / Content"></textarea>
+
+    <input type="text" id="video_url"
+        placeholder="Video Lecture URL">
+
+    <!-- 📄 Upload PDF -->
+    <input type="file" id="pdf">
+
+    <!-- 🔐 NEW → PDF PASSWORD -->
+    <input type="password" id="pdf_password"
+        placeholder="Set PDF Password (optional)">
+
+    <button onclick="createPost()">
+        Create Post
+    </button>
+
+    <p id="msg"></p>
+
+    <button onclick="back()">Back</button>
+
+</div>
+</div>
+
+<script src="js/create_post.js"></script>
+</body>
+</html>

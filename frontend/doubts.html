@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doubts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Learn Academy</h1>
+    </header>
+
+    <div class="page-content">
+
+
+<div class="container">
+    <h2>Ask a Doubt</h2>
+
+    <!-- REQUIRED: Quiz ID to link doubt to instructor -->
+    <label>Quiz ID:</label>
+    <input
+        type="number"
+        id="quiz_id"
+        placeholder="Enter Quiz ID"
+        required
+        style="width:100%;padding:8px;margin-bottom:10px;"
+    >
+
+    <!-- REQUIRED: Question field -->
+    <textarea
+        id="question"
+        placeholder="Type your doubt..."
+        rows="5"
+        style="width:100%;padding:10px;"
+    ></textarea>
+
+    <br><br>
+
+    <button onclick="submitDoubt()">Submit</button>
+    <p id="msg"></p>
+
+    <hr>
+<h3>My Doubts & Replies</h3>
+<pre id="my_doubts">Loading...</pre>
+
+
+    <button onclick="back()">Back</button>
+</div>
+
+<script src="js/doubts.js"></script>
+</body>
+</html>

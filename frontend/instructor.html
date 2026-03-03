@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instructor Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>Learn Academy</h1>
+</header>
+
+<div class="page-content">
+<div class="container">
+
+    <h2>Instructor Dashboard</h2>
+
+    <!-- DASHBOARD CARDS ONLY -->
+    <div class="card-grid">
+
+        <div class="card"
+             onclick="goToQuizzes()">
+            📝 Quiz Submissions
+        </div>
+
+        <div class="card"
+             onclick="goToDoubts()">
+            💬 Student Doubts
+        </div>
+
+        <div class="card"
+             onclick="goToAssignments()">
+            📂 Assignments
+        </div>
+
+        <div class="card"
+             onclick="goToPosts()">
+            📚 Add Study Post
+        </div>
+
+    </div>
+
+    <button class="logout"
+        onclick="logout()">
+        Logout
+    </button>
+
+</div>
+</div>
+
+<script src="js/instructor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Submissions</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>Learn Academy</h1>
+</header>
+
+<div class="page-content">
+<div class="container">
+
+    <h2>Quiz Submissions</h2>
+
+    <!-- Quiz List -->
+<div id="quizList"></div>
+
+    <hr>
+
+    <h3>Evaluate Quiz</h3>
+
+    <input type="number"
+        id="quiz_id"
+        placeholder="Quiz ID">
+
+    <input type="number"
+        id="score"
+        placeholder="Score">
+
+    <button onclick="evaluateQuiz()">
+        Submit Score
+    </button>
+
+    <button onclick="goBack()" 
+style="margin-top:20px;background:#333;">
+    ← Back to Dashboard
+</button>
+
+
+</div>
+</div>
+
+<script src="js/instructor.js"></script>
+<script>
+document.addEventListener(
+    "DOMContentLoaded",
+    loadQuizzes
+);
+</script>
+
+</body>
+</html>

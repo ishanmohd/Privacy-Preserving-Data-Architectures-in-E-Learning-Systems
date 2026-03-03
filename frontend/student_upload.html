@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Assignment</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="site-header">
+        <h1>Learn Academy</h1>
+    </header>
+
+    <div class="page-content">
+
+
+
+<div class="container">
+    <h2>Upload Assignment</h2>
+
+    <input
+        type="file"
+        id="file"
+        style="width:100%;padding:8px;"
+        required
+    >
+
+    <br><br>
+
+    <button onclick="uploadAssignment()">Upload</button>
+
+    <p id="msg"></p>
+
+    <br>
+
+    <button onclick="back()">Back</button>
+</div>
+
+<script src="js/student.js"></script>
+
+<script>
+    function back() {
+        window.location.href = "student.html";
+    }
+</script>
+
+</body>
+</html>

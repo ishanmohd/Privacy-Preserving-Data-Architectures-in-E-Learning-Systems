@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <header class="site-header">
+        <h1>Learn Academy</h1>
+    </header>
+
+    <div class="page-content">
+     
+
+
+<div class="container">
+    <h2>Quick Quiz</h2>
+
+    <!-- REQUIRED METADATA -->
+    <input type="hidden" id="quiz_name" value="Privacy Basics Quiz">
+
+    <!-- Instructor ID (can be hidden or dropdown in real system) -->
+    <label>Instructor ID:</label>
+    <input type="number" id="instructor_id" placeholder="Enter Instructor ID" required>
+
+    <hr>
+
+    <!-- QUESTION 1 -->
+    <p>1. What does OTP stand for?</p>
+    <label>
+        <input type="radio" name="q1" value="One Time Password">
+        One Time Password
+    </label><br>
+    <label>
+        <input type="radio" name="q1" value="Online Test Protocol">
+        Online Test Protocol
+    </label>
+
+    <hr>
+
+    <!-- QUESTION 2 -->
+    <p>2. What improves privacy in analytics?</p>
+    <label>
+        <input type="radio" name="q2" value="Encryption">
+        Encryption
+    </label><br>
+    <label>
+        <input type="radio" name="q2" value="Differential Privacy">
+        Differential Privacy
+    </label>
+
+    <hr>
+
+    <!-- QUESTION 3 (OPTIONAL BUT SUPPORTED) -->
+    <p>3. Which technique hides direct identifiers?</p>
+    <label>
+        <input type="radio" name="q3" value="Anonymization">
+        Anonymization
+    </label><br>
+    <label>
+        <input type="radio" name="q3" value="Plain Storage">
+        Plain Storage
+    </label>
+
+    <br>
+
+    <button onclick="submitQuiz()">Submit Quiz</button>
+    <p id="msg"></p>
+
+    <button onclick="back()">Back</button>
+</div>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>
